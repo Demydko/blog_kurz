@@ -1,0 +1,154 @@
+.wrap {
+  display: grid;
+  grid-template-areas: "header header" "aside section" "footer footer";
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 70px 1fr 70px;
+  height: 100vh;
+}
+.wrap-2 {
+  display: grid;
+  grid-template-areas: "header" "section" "footer";
+  grid-template-rows: 70px 1fr 70px;
+  height: 100vh;
+  justify-content: center;
+}
+header {
+  background-color: #aa4465;
+  grid-area: header;
+  font-size: 35px;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-bottom: 0;
+  font-family: "Princess Sofia", cursive;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+}
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+aside {
+  background-color: #ffd9d6;
+  grid-area: aside;
+  padding: 10px;
+  line-height: 26px;
+}
+
+.menu {
+  margin: 10px;
+  width: 90%;
+}
+
+.index {
+  background-color: #ffffff;
+  grid-area: section;
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.img-ind:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(115, 54, 73, 0.5); /* Полупрозрачный черный фон */
+  z-index: 1;
+}
+
+.article {
+  background-color: #ffffff;
+  grid-area: section;
+  padding: 40px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+footer {
+  background-color: rgb(170, 68, 101);
+  grid-area: footer;
+  align-items: center;
+  position: relative;
+  justify-content: end;
+  display: flex;
+  padding-right: 3rem;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: left;
+}
+
+.text-1 {
+  width: 70%;
+  font-size: 22px;
+  line-height: 30px;
+  color: #3a3131;
+}
+
+.centered-text {
+  display: flex;
+  justify-content: flex-start; /* Центрирование по горизонтали */
+  align-items: flex-end;
+  height: 300px;
+  display: flex;
+  align-items: end;
+  width: 100%;
+}
+
+.icon-i {
+  width: 35px;
+  position: relative;
+  vertical-align: middle;
+}
+.icon-f {
+  width: 30px;
+  position: relative;
+  vertical-align: middle;
+}
+.icon-l {
+  width: 35px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.img-ind {
+  width: 107.15%;
+  height: 300px;
+  overflow: hidden;
+  margin-left: -40px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+
+.img-ind img {
+  width: 100%; /* Изображение растянуто на всю ширину контейнера */
+  height: 100%; /* Изображение растянуто по высоте контейнера */
+  object-fit: cover;
+}
+
+.list {
+  margin-bottom: 20px;
+}
+
+.list-title {
+  color: rgb(76, 31, 47);
+}
+
+.text-2 {
+  width: 70%;
+  font-size: 20px;
+  text-align: justify;
+  vertical-align: middle;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
